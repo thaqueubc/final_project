@@ -1,0 +1,42 @@
+/* CSS Document */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: Georgia, Times, Times New Roman, serif;
+  line-height: 1.4;
+}
+
+h1, h2, h3, nav a, table {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+body {
+  background-color: #303030;
+}
+
+.wrapper {
+  max-width: 1200px;
+  background-color: white;
+}
+
+footer {
+  padding: 30px;
+  border-top: 1px dotted #303030;
+}
+
+/*# sourceMappingURL=styles.css.map */
