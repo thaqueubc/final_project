@@ -2,14 +2,39 @@
 
 header{
     background-color: $navbar-color;
-    height: 50px;
+    height: 80px;
     color: $text-color-light;
     display: flex;
     justify-content: space-between;
     padding: 0;
 
-    .h1{
+    div.h1{
+         flex: 1 1 30%;
+         margin-bottom: 0;
+         margin-left: 20px;
+         a{
+            color: $text-color-light;
+            text-align: center;
+            text-decoration: none;
+         }
+        
+    }
+    
+    nav{
+        flex: 1 1 70%;
+        padding: 5px;
+        margin-right: 20px;
+
+        ul{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            color: $text-color-light;
+            padding: 10px;
+        }
+        }
 
     }
-
 }
