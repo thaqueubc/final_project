@@ -1,0 +1,17 @@
+main.outline{
+    min-height: 80vh;
+    display: flex;
+    aside{
+        flex:1 1 15%;
+        border: 1px solid red;
+    }
+
+    div{
+        flex:1 1 80%;
+        padding: $padding;
+        border: 1px solid red;
+    }
+
+    
+        
+}
