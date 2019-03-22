@@ -1,5 +1,8 @@
 // Footer Styles
 footer {
-    padding: $padding;
+    padding: $padding_footer;
     border-top: 1px dotted $body-bg-color;
+    background-color:$navbar-color;
+    color: $text-color-light;
+  
 }
