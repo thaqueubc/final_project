@@ -1,33 +1,32 @@
 /* CSS Document */
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 img {
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 body {
   font-family: Georgia, Times, Times New Roman, serif;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
 
 h1, h2, h3, nav a, table {
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
-}
+  font-family: Tahoma, Verdana, Segoe, sans-serif; }
+
+h2 {
+  text-align: center; }
+
+p {
+  text-align: justify; }
 
 body {
-  background-color: #303030;
-}
+  background-color: #303030; }
 
 .wrapper {
   height: 100%;
@@ -35,8 +34,7 @@ body {
   min-height: 100vh;
   background-color: antiquewhite;
   position: relative;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 header {
   background-color: royalblue;
@@ -44,39 +42,46 @@ header {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 0;
-}
-header div.h1 {
-  flex: 1 1 30%;
-  margin-bottom: 0;
-  margin-left: 20px;
-}
-header div.h1 a {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-header nav {
-  flex: 1 1 70%;
-  padding: 5px;
-  margin-right: 20px;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-header nav ul a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  outline: none;
-  font-weight: bold;
-}
+  padding: 0; }
+  header div.h1 {
+    flex: 1 1 30%;
+    margin-bottom: 0;
+    margin-left: 20px; }
+    header div.h1 a {
+      color: white;
+      text-align: center;
+      text-decoration: none; }
+  header nav {
+    flex: 1 1 70%;
+    padding: 5px;
+    margin-right: 20px; }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none; }
+      header nav ul a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        outline: none;
+        font-weight: bold; }
+
+main.outline {
+  min-height: 80vh;
+  display: flex; }
+  main.outline aside {
+    flex: 1 1 15%; }
+  main.outline section {
+    flex: 1 1 80%; }
+    main.outline section div {
+      padding: 30px;
+      display: flex;
+      flex-direction: column; }
 
 footer {
-  padding: 30px;
+  padding: 10px;
   border-top: 1px dotted #303030;
-}
+  background-color: royalblue;
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */

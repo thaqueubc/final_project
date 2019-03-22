@@ -3,13 +3,16 @@ main.outline{
     display: flex;
     aside{
         flex:1 1 15%;
-        border: 1px solid red;
     }
 
-    div{
+    section{
         flex:1 1 80%;
-        padding: $padding;
-        border: 1px solid red;
+   
+        div{
+            padding: $padding;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     
