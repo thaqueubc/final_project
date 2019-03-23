@@ -14,13 +14,14 @@ body {
 
 body {
   font-family: Georgia, Times, Times New Roman, serif;
-  line-height: 1.4; }
+  line-height: 1.2; }
 
 h1, h2, h3, nav a, table {
   font-family: Tahoma, Verdana, Segoe, sans-serif; }
 
-h2 {
-  text-align: center; }
+h1, h2 {
+  text-align: center;
+  margin: 10px 0; }
 
 p {
   text-align: justify; }
@@ -57,26 +58,61 @@ header {
     margin-right: 20px; }
     header nav ul {
       display: flex;
-      justify-content: space-between;
-      list-style: none; }
+      justify-content: space-between; }
+      header nav ul li {
+        list-style: none; }
+        header nav ul li a {
+          text-decoration: none;
+          outline: none; }
       header nav ul a {
-        text-decoration: none;
         color: white;
         padding: 10px;
-        outline: none;
         font-weight: bold; }
 
 main.outline {
   min-height: 80vh;
-  display: flex; }
+  display: flex;
+  box-shadow: inset -5px -5px 10px 10px whitesmoke; }
   main.outline aside {
-    flex: 1 1 15%; }
-  main.outline section {
-    flex: 1 1 80%; }
-    main.outline section div {
-      padding: 30px;
+    flex: 1 1 18%; }
+    main.outline aside li {
+      list-style: none; }
+      main.outline aside li a {
+        text-decoration: none;
+        outline: none; }
+    main.outline aside ul {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      padding: 5px; }
+      main.outline aside ul li {
+        border: 1px solid white;
+        padding: 10px 15px;
+        margin: 5px 0;
+        text-align: center;
+        border-radius: 5px;
+        background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%); }
+        main.outline aside ul li a {
+          color: white;
+          font-weight: bold; }
+  main.outline section {
+    flex: 1 1 78%;
+    padding: 30px; }
+    main.outline section div h1 {
+      font-size: 2em;
+      text-shadow: 10px 10px 10px #363636; }
+    main.outline section div h2 {
+      font-size: 1.3em; }
+    main.outline section div table {
+      border-collapse: collapse;
+      width: auto;
+      height: auto;
+      border: 5px solid white;
+      margin: 2% 30%; }
+      main.outline section div table th, main.outline section div table td {
+        text-align: center;
+        padding: 10px; }
+      main.outline section div table tr:nth-child(even) {
+        background-color: white; }
 
 footer {
   padding: 10px;
