@@ -1,0 +1,37 @@
+// Mixins
+
+// Mixin for centering element
+// with margin-left: auto
+// and margin-right: auto;
+@mixin margin-center {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+//Mixin to display a list
+@mixin display_ul {
+    li{
+        list-style: none;
+        a{  
+            text-decoration: none;
+            outline: none;
+        }  
+    }
+     
+}
+
+@mixin table-style {
+    border-collapse: collapse;
+    width:auto;
+    height: auto;
+
+    th,td{
+        text-align: center;
+        padding: 10px;
+    }
+    tr:nth-child(even){
+       background-color: white;
+    }
+}
