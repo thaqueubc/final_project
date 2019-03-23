@@ -1,0 +1,54 @@
+main.outline{
+    min-height: 80vh;
+    display: flex;
+    box-shadow: inset -5px -5px 10px 10px whitesmoke;
+    aside{
+        flex:1 1 18%;
+        @include display_ul;
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            li{
+                border: 1px solid white;
+                padding: 10px 15px;
+                margin: 5px 0;
+                text-align: center;
+                border-radius: 5px;
+                background: linear-gradient(to right, rgba(75,199,237,1) 22%,rgba(73,155,234,1) 64%,rgba(32,124,229,1) 89%);;
+                
+                a{
+                    color: $text-color-light;
+                    font-weight: bold;
+                }
+            }
+        }
+        
+    }
+
+    section{
+        flex:1 1 78%;
+        padding: $padding;
+       
+        div{
+            h1{
+                font-size: 2em; 
+                text-shadow: 10px 10px 10px #363636;
+            }
+
+            h2{
+                font-size: 1.3em;
+            }
+            table{
+                @include table-style;
+                border: 5px solid white;
+                margin:2% 30%;
+            }
+            
+        }
+    }
+
+    
+        
+}
