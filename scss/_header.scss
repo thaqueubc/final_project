@@ -1,38 +1,40 @@
 //header style
 
 header{
-    background-color: $navbar-color;
+    background: $navbar-color;
     height: 80px;
-    color: $text-color-light;
     display: flex;
-    justify-content: space-between;
     padding: 0;
 
-    div.h1{
-         flex: 1 1 30%;
-         margin-bottom: 0;
-         margin-left: 20px;
+    h1{
+         flex: 1 1 20%;
+         margin: 0 auto;
+         padding: 0;
+
+        
          a{
             color: $text-color-light;
             text-align: center;
+            font-size: 1.9em;
+            text-shadow: 10px 10px 10px #363636;
             text-decoration: none;
          }
         
     }
     
     nav{
-        flex: 1 1 70%;
+        flex: 1 1 80%;
         padding: 5px;
         margin-right: 20px;
-
         ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             @include display_ul;
-
             a{
                 color: $text-color-light;
+                font-size: 1.2em;
                 padding: 10px;
+                margin: 0 10px;
                 font-weight: bold;
             }
         }
