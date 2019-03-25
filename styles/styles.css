@@ -20,8 +20,7 @@ h1, h2, h3, nav a, table {
   font-family: Tahoma, Verdana, Segoe, sans-serif; }
 
 h1, h2 {
-  text-align: center;
-  margin: 10px 0; }
+  text-align: center; }
 
 p {
   text-align: justify; }
@@ -38,27 +37,27 @@ body {
   margin: 0 auto; }
 
 header {
-  background-color: royalblue;
+  background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
   height: 80px;
-  color: white;
   display: flex;
-  justify-content: space-between;
   padding: 0; }
-  header div.h1 {
-    flex: 1 1 30%;
-    margin-bottom: 0;
-    margin-left: 20px; }
-    header div.h1 a {
+  header h1 {
+    flex: 1 1 20%;
+    margin: 0 auto;
+    padding: 0; }
+    header h1 a {
       color: white;
       text-align: center;
+      font-size: 1.9em;
+      text-shadow: 10px 10px 10px #363636;
       text-decoration: none; }
   header nav {
-    flex: 1 1 70%;
+    flex: 1 1 80%;
     padding: 5px;
     margin-right: 20px; }
     header nav ul {
       display: flex;
-      justify-content: space-between; }
+      justify-content: flex-end; }
       header nav ul li {
         list-style: none; }
         header nav ul li a {
@@ -66,7 +65,9 @@ header {
           outline: none; }
       header nav ul a {
         color: white;
+        font-size: 1.2em;
         padding: 10px;
+        margin: 0 10px;
         font-weight: bold; }
 
 main.outline {
@@ -117,7 +118,7 @@ main.outline {
 footer {
   padding: 10px;
   border-top: 1px dotted #303030;
-  background-color: royalblue;
+  background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
   color: white; }
 
 /*# sourceMappingURL=styles.css.map */
