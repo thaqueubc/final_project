@@ -53,7 +53,7 @@ header{
 
     .show & {
         height: auto;
-        width: 100%
+        width: 100%;
     }
 
     div{
@@ -64,14 +64,8 @@ header{
             text-align: left;
             padding: 5px 10px;
             margin: 0 auto;
-            border: 1px solid red;
         }
 
-        /*.show & {
-            height: auto;
-            width: 100%
-        }*/
-        
         .menu-btn{
             flex: 1 1 20%;
             display: block; 
@@ -79,7 +73,6 @@ header{
             border: none;
             padding-right: 10px;
             cursor: pointer; 
-            border: 1px solid red;
 
             div{
                 width: 35px;
@@ -93,22 +86,30 @@ header{
 
     nav {
         display: none;
-        //width: 100%;
         margin: 5px;
         
     .show & {
         display: flex;
         justify-content: flex-end; 
+        height: auto;;
         width: 100%;
+        background-color: $wrapper-bg-color;
+        margin: 0 auto;
+        padding: 0;
+        cursor: pointer;
+        border: 1px solid white;
         ul {
             background: $navbar-color;
             display: block;
             margin: 0;
             padding: 5px;
+            
             li{
                 text-align: right;
-    
+                border-bottom: 1px solid white;
+                margin: 5px 0;
                 a{
+                    padding: 5px 0;
                     text-align: center;
                     font-weight: normal;
                 }
@@ -116,23 +117,9 @@ header{
         }
     }
 
-    } 
+} 
 
-       /* nav ul {
-            background: $navbar-color;
-            display: block;
-            margin: 0;
-            padding: 5px;
-            li{
-                text-align: right;
-
-                a{
-                    text-align: center;
-                    font-weight: normal;
-                }
-            }
-        }*/
-
-    }
+   
+}
         
 }

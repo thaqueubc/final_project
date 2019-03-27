@@ -78,44 +78,24 @@ header {
         font-weight: bold; }
   @media (max-width: 750px) {
     header {
-      flex-wrap: wrap;
-       /* nav ul {
-            background: $navbar-color;
-            display: block;
-            margin: 0;
-            padding: 5px;
-            li{
-                text-align: right;
-
-                a{
-                    text-align: center;
-                    font-weight: normal;
-                }
-            }
-        }*/ }
+      flex-wrap: wrap; }
       .show header {
         height: auto;
         width: 100%; }
       header div {
-        display: flex;
-        /*.show & {
-            height: auto;
-            width: 100%
-        }*/ }
+        display: flex; }
         header div h1 {
           flex: 1 1 80%;
           text-align: left;
           padding: 5px 10px;
-          margin: 0 auto;
-          border: 1px solid red; }
+          margin: 0 auto; }
         header div .menu-btn {
           flex: 1 1 20%;
           display: block;
           background-color: transparent;
           border: none;
           padding-right: 10px;
-          cursor: pointer;
-          border: 1px solid red; }
+          cursor: pointer; }
           header div .menu-btn div {
             width: 35px;
             height: 5px;
@@ -128,15 +108,24 @@ header {
         .show header nav {
           display: flex;
           justify-content: flex-end;
-          width: 100%; }
+          height: auto;
+          width: 100%;
+          background-color: antiquewhite;
+          margin: 0 auto;
+          padding: 0;
+          cursor: pointer;
+          border: 1px solid white; }
           .show header nav ul {
             background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
             display: block;
             margin: 0;
             padding: 5px; }
             .show header nav ul li {
-              text-align: right; }
+              text-align: right;
+              border-bottom: 1px solid white;
+              margin: 5px 0; }
               .show header nav ul li a {
+                padding: 5px 0;
                 text-align: center;
                 font-weight: normal; } }
 
