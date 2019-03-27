@@ -1,10 +1,15 @@
 //header style
 
 header{
-    background: $navbar-color;
+    
     height: 80px;
-    display: flex;
+    
     padding: 0;
+
+    .top-row {
+        background: $navbar-color;
+        display: flex;
+    }
 
     h1{
          flex: 1 1 20%;
@@ -21,7 +26,12 @@ header{
          }
         
     }
-    
+   
+
+    .menu-btn{
+        display: none;
+    }
+
     nav{
         flex: 1 1 80%;
         padding: 5px;
@@ -40,4 +50,64 @@ header{
         }
 
     }
+
+    @media (max-width:  750px){
+
+        h1{
+            flex:1 1 80%;
+            text-align: left;
+            padding: 5px 10px;
+            margin: 0 auto;
+        }
+
+        .show & {
+            height: auto;
+            width: 100%
+        }
+
+        .menu-btn{
+            flex: 1 1 10%;
+            display: block; 
+            background-color: transparent;
+            border: none;
+            padding-right: 10px;
+            cursor: pointer; 
+            
+            div{
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 6px 0;
+                padding: 0 10px;
+            }
+        }      
+        
+        nav {
+            display: none;
+            width: 100%;
+            justify-content: flex-end;
+            .show & {
+                display: flex;
+            }
+
+        } 
+
+        nav ul {
+            background: $navbar-color;
+            display: block;
+            margin: 0;
+            padding: 5px;
+            padding-right: 10px;
+            li{
+                text-align: right;
+
+                a{
+                    text-align: center;
+                    font-weight: normal;
+                }
+            }
+        }
+
+    }
+        
 }

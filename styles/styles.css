@@ -41,10 +41,11 @@ body {
   margin: 0 auto; }
 
 header {
-  background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
   height: 80px;
-  display: flex;
   padding: 0; }
+  header .top-row {
+    background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
+    display: flex; }
   header h1 {
     flex: 1 1 20%;
     margin: 0 auto;
@@ -55,6 +56,8 @@ header {
       font-size: 1.9em;
       text-shadow: 10px 10px 10px #363636;
       text-decoration: none; }
+  header .menu-btn {
+    display: none; }
   header nav {
     flex: 1 1 80%;
     padding: 5px;
@@ -73,6 +76,45 @@ header {
         padding: 10px;
         margin: 0 10px;
         font-weight: bold; }
+  @media (max-width: 750px) {
+    header h1 {
+      flex: 1 1 80%;
+      text-align: left;
+      padding: 5px 10px;
+      margin: 0 auto; }
+    .show header {
+      height: auto;
+      width: 100%; }
+    header .menu-btn {
+      flex: 1 1 10%;
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding-right: 10px;
+      cursor: pointer; }
+      header .menu-btn div {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        padding: 0 10px; }
+    header nav {
+      display: none;
+      width: 100%;
+      justify-content: flex-end; }
+      .show header nav {
+        display: flex; }
+    header nav ul {
+      background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
+      display: block;
+      margin: 0;
+      padding: 5px;
+      padding-right: 10px; }
+      header nav ul li {
+        text-align: right; }
+        header nav ul li a {
+          text-align: center;
+          font-weight: normal; } }
 
 main.outline {
   min-height: 80vh;

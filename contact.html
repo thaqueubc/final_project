@@ -11,8 +11,15 @@
 <body>
 <div class="wrapper">
 <header>
-    <h1><a href="index.html">BCIT</a></h1> 
-                    
+    <div class="top-row">
+        <h1><a href="index.html">BCIT</a></h1> 
+
+        <button class="menu-btn" id="menu-btn"> 
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>               
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -41,7 +48,11 @@
             
             <div class="info">
                 <p>Email :  <input type="text" name="email_id" placeholder="Please enter your Email ID" required> </p>
-                <p>Student Number : <input type="text" name="student_id" placeholder="Please enter BCIT student ID e.g. A01010101" required></p>
+                <p>Student Number : <input type="text" 
+                                           name="student_id" 
+                                           placeholder="Please enter BCIT student ID e.g. A01010101" 
+                                           required
+                                           pattern="[Aa][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"></p>
             </div>
             
             <div  style="font-weight:bold">
@@ -119,6 +130,7 @@
 </div>
 
 <script src="./scripts/thankYou.js"></script>
+<script src="./scripts/menu.js"></script>
 </body>
 
 </html>

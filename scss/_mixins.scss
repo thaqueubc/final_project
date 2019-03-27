@@ -35,3 +35,19 @@
        background-color: white;
     }
 }
+
+//This code is taken from Day-08 _mixin.scss file
+// Visually hide an element but
+// still make it accessible to 
+// a screen reader
+@mixin visually-hidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
