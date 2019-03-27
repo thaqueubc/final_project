@@ -1,36 +1,32 @@
 //header style
 
-header{
-    
+header{   
     height: 80px;
-    
     padding: 0;
+    display: flex;
+    background: $navbar-color;
 
-    .top-row {
-        background: $navbar-color;
-        display: flex;
-    }
-
-    h1{
-         flex: 1 1 20%;
-         margin: 0 auto;
-         padding: 0;
-
-        
-         a{
-            color: $text-color-light;
-            text-align: center;
-            font-size: 1.9em;
-            text-shadow: 10px 10px 10px #363636;
-            text-decoration: none;
-         }
-        
-    }
+    div {    
+        flex: 1 1 20%;
+        h1{
+            margin: 0 auto;
+            padding: 0;
+          
+            a{
+                color: $text-color-light;
+                text-align: center;
+                font-size: 1.9em;
+                text-shadow: 10px 10px 10px #363636;
+                text-decoration: none;
+            }
+            
+        }
    
-
-    .menu-btn{
-        display: none;
+        .menu-btn{
+            display: none;
+        }
     }
+
 
     nav{
         flex: 1 1 80%;
@@ -53,26 +49,38 @@ header{
 
     @media (max-width:  750px){
 
+    flex-wrap: wrap;
+
+    .show & {
+        height: auto;
+        width: 100%
+    }
+
+    div{
+        display: flex;
+       
         h1{
             flex:1 1 80%;
             text-align: left;
             padding: 5px 10px;
             margin: 0 auto;
+            border: 1px solid red;
         }
 
-        .show & {
+        /*.show & {
             height: auto;
             width: 100%
-        }
-
+        }*/
+        
         .menu-btn{
-            flex: 1 1 10%;
+            flex: 1 1 20%;
             display: block; 
             background-color: transparent;
             border: none;
             padding-right: 10px;
             cursor: pointer; 
-            
+            border: 1px solid red;
+
             div{
                 width: 35px;
                 height: 5px;
@@ -81,23 +89,40 @@ header{
                 padding: 0 10px;
             }
         }      
+    }   
+
+    nav {
+        display: none;
+        //width: 100%;
+        margin: 5px;
         
-        nav {
-            display: none;
-            width: 100%;
-            justify-content: flex-end;
-            .show & {
-                display: flex;
-            }
-
-        } 
-
-        nav ul {
+    .show & {
+        display: flex;
+        justify-content: flex-end; 
+        width: 100%;
+        ul {
             background: $navbar-color;
             display: block;
             margin: 0;
             padding: 5px;
-            padding-right: 10px;
+            li{
+                text-align: right;
+    
+                a{
+                    text-align: center;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    } 
+
+       /* nav ul {
+            background: $navbar-color;
+            display: block;
+            margin: 0;
+            padding: 5px;
             li{
                 text-align: right;
 
@@ -106,7 +131,7 @@ header{
                     font-weight: normal;
                 }
             }
-        }
+        }*/
 
     }
         

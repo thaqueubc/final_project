@@ -42,22 +42,22 @@ body {
 
 header {
   height: 80px;
-  padding: 0; }
-  header .top-row {
-    background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
-    display: flex; }
-  header h1 {
-    flex: 1 1 20%;
-    margin: 0 auto;
-    padding: 0; }
-    header h1 a {
-      color: white;
-      text-align: center;
-      font-size: 1.9em;
-      text-shadow: 10px 10px 10px #363636;
-      text-decoration: none; }
-  header .menu-btn {
-    display: none; }
+  padding: 0;
+  display: flex;
+  background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%); }
+  header div {
+    flex: 1 1 20%; }
+    header div h1 {
+      margin: 0 auto;
+      padding: 0; }
+      header div h1 a {
+        color: white;
+        text-align: center;
+        font-size: 1.9em;
+        text-shadow: 10px 10px 10px #363636;
+        text-decoration: none; }
+    header div .menu-btn {
+      display: none; }
   header nav {
     flex: 1 1 80%;
     padding: 5px;
@@ -77,44 +77,68 @@ header {
         margin: 0 10px;
         font-weight: bold; }
   @media (max-width: 750px) {
-    header h1 {
-      flex: 1 1 80%;
-      text-align: left;
-      padding: 5px 10px;
-      margin: 0 auto; }
-    .show header {
-      height: auto;
-      width: 100%; }
-    header .menu-btn {
-      flex: 1 1 10%;
-      display: block;
-      background-color: transparent;
-      border: none;
-      padding-right: 10px;
-      cursor: pointer; }
-      header .menu-btn div {
-        width: 35px;
-        height: 5px;
-        background-color: white;
-        margin: 6px 0;
-        padding: 0 10px; }
-    header nav {
-      display: none;
-      width: 100%;
-      justify-content: flex-end; }
-      .show header nav {
-        display: flex; }
-    header nav ul {
-      background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
-      display: block;
-      margin: 0;
-      padding: 5px;
-      padding-right: 10px; }
-      header nav ul li {
-        text-align: right; }
-        header nav ul li a {
-          text-align: center;
-          font-weight: normal; } }
+    header {
+      flex-wrap: wrap;
+       /* nav ul {
+            background: $navbar-color;
+            display: block;
+            margin: 0;
+            padding: 5px;
+            li{
+                text-align: right;
+
+                a{
+                    text-align: center;
+                    font-weight: normal;
+                }
+            }
+        }*/ }
+      .show header {
+        height: auto;
+        width: 100%; }
+      header div {
+        display: flex;
+        /*.show & {
+            height: auto;
+            width: 100%
+        }*/ }
+        header div h1 {
+          flex: 1 1 80%;
+          text-align: left;
+          padding: 5px 10px;
+          margin: 0 auto;
+          border: 1px solid red; }
+        header div .menu-btn {
+          flex: 1 1 20%;
+          display: block;
+          background-color: transparent;
+          border: none;
+          padding-right: 10px;
+          cursor: pointer;
+          border: 1px solid red; }
+          header div .menu-btn div {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+            padding: 0 10px; }
+      header nav {
+        display: none;
+        margin: 5px; }
+        .show header nav {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%; }
+          .show header nav ul {
+            background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
+            display: block;
+            margin: 0;
+            padding: 5px; }
+            .show header nav ul li {
+              text-align: right; }
+              .show header nav ul li a {
+                text-align: center;
+                font-weight: normal; } }
 
 main.outline {
   min-height: 80vh;
