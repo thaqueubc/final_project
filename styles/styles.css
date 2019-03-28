@@ -224,22 +224,37 @@ footer {
   border-top: 1px dotted #303030;
   background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
   color: white;
-  display: flex; }
-  footer div {
-    flex: 1 1 31%;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 1;
+  grid-template-areas: "div1 div2 div3"; }
+  footer .div {
     padding: 0 20px; }
-    footer div li {
+    footer .div li {
       list-style: none; }
-      footer div li a {
+      footer .div li a {
         text-decoration: none;
         outline: none; }
-    footer div h2 {
+    footer .div h2 {
       font-size: 1.2em; }
-    footer div ul li a {
+    footer .div ul li a {
       font-size: 0.9em;
       line-height: 1; }
-    footer div p {
-      font-size: 0.9em;
-      line-height: 1; }
+  footer .div1 {
+    grid-area: div1; }
+  footer .div2 {
+    grid-area: div2; }
+  footer .div3 {
+    grid-area: div3; }
+  @media (max-width: 750px) {
+    footer {
+      grid-template-columns: 2;
+      grid-template-rows: 2;
+      grid-template-areas: "div1 div2" "div3 div3"; } }
+  @media (max-width: 500px) {
+    footer {
+      grid-template-columns: 1;
+      grid-template-rows: 3;
+      grid-template-areas: "div1" "div2" "div3"; } }
 
 /*# sourceMappingURL=styles.css.map */
