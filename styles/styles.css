@@ -119,7 +119,8 @@ header {
             background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
             display: block;
             margin: 0;
-            padding: 5px; }
+            padding: 5px;
+            width: 25%; }
             .show header nav ul li {
               text-align: right;
               border-bottom: 1px solid white;
@@ -128,6 +129,13 @@ header {
                 padding: 5px 0;
                 text-align: center;
                 font-weight: normal; } }
+  @media (max-width: 550px) {
+    .show header nav {
+      justify-content: center; }
+      .show header nav ul {
+        width: 100%; }
+        .show header nav ul li {
+          text-align: center; } }
 
 main.outline {
   min-height: 80vh;
@@ -189,8 +197,10 @@ main.outline {
         flex: 1;
         margin: 5px;
         padding: 10px; }
-        main.outline section h1 {
-          margin: 10px auto; } }
+        main.outline section div h1 {
+          margin: 10px auto; }
+        main.outline section div table {
+          margin: 2px; } }
 
 div.form-heading {
   width: 100%;

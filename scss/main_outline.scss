@@ -69,8 +69,14 @@ main.outline{
             flex: 1;
             margin: 5px;
             padding: 10px;
-            h1{
-                margin: 10px auto;
+            div{
+                h1{
+                    margin: 10px auto;
+                }
+
+                table{
+                    margin: 2px;
+                }
             }
         }
     }
