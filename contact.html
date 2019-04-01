@@ -38,30 +38,39 @@
  </div>
 
 <div class="form">
-<section class="form_container">
+        <section class="form_container">
         <h1>Contact Us </h1>
         <form id="myForm" action="#" onsubmit="thankYou()">
             <div class="info">
-                <p>
-                    <label for="first_name"> First Name : </label>  
+                <p class="info_left">
+                    <label for="first_name"> First Name : </label>  <br>
                     <input type="text" name="first_name" placeholder="Please enter your First name" required>  
                 </p>
-                <p><label for="last_name">Last Name : </label>  <input type="text" name="last_name" placeholder="Please enter your Last name" required> </p>
+                <p class="info_right">
+                    <label for="last_name">Last Name : </label>  <br>
+                    <input type="text" name="last_name" placeholder="Please enter your Last name" required> 
+                </p>
             </div>
             
             <div class="info">
-                <p><label for="email">Email :</label>  <input type="text" name="email_id" placeholder="Please enter your Email ID" required> </p>
-                <p> <label for="student_id">Student Number : </label> <input type="text" 
+                <p class="info_left">
+                    <label for="email">Email :</label>  <br>
+                    <input type="text" name="email_id" placeholder="Please enter your Email ID" required> 
+                </p>
+                <p class="info_right"> 
+                    <label for="student_id">Student Number : </label> <br>
+                     <input type="text" 
                                            name="student_id" 
                                            placeholder="Please enter BCIT student ID e.g. A01010101" 
                                            required
-                                           pattern="[Aa][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"></p>
+                                           pattern="[Aa][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+                </p>
             </div>
             
             <div  style="font-weight:bold">
                 <p> <label for="student_status">Student Status : </label></p> 
                 <input type="radio" name="current_student" value="Current BCIT Student">  Current BCIT Student
-                <input type="radio" name="prospective_student" value="Prospective Student">  Prospective Student
+                <br> <input type="radio" name="prospective_student" value="Prospective Student">  Prospective Student
             </div>
             
             <div style="font-weight:bold">

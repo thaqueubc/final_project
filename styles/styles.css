@@ -198,13 +198,12 @@ div.form-heading {
 
 div.form {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
   div.form section.form_container {
-    flex: 1 1 80%;
-    max-width: 750px;
+    flex: 1 1 70%;
     min-height: 50vh;
-    margin: 20px 10px;
-    margin-left: 30px;
+    margin: 10px;
+    border-radius: 10px;
     padding: 10px;
     background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
     background-size: 110px 200px;
@@ -215,11 +214,12 @@ div.form {
       display: flex; }
       div.form section.form_container form div.info p {
         flex: 1 1 50%;
-        font-weight: bold; }
+        font-weight: bold;
+        float: left; }
   div.form aside {
     flex: 1 1 20%;
     margin: 10px;
-    margin-right: 20px; }
+    padding: 10px; }
     div.form aside div {
       padding: 10px;
       margin: 15px 10px;
@@ -237,6 +237,24 @@ div.form {
         text-align: center; }
     div.form aside div.box1 {
       bottom: 10px; }
+  @media (max-width: 750px) {
+    div.form div.info {
+      flex-direction: column; }
+      div.form div.info p.info_left {
+        flex: 1; }
+      div.form div.info p.info_right {
+        flex: 1; } }
+  @media (max-width: 750px) {
+    div.form {
+      flex-direction: column-reverse; }
+      div.form section.form_container {
+        flex: 1;
+        margin: 10px 20px;
+        margin-bottom: 20px; }
+      div.form aside {
+        flex: 1;
+        margin: 0 10px;
+        padding: 0 10px; } }
 
 footer {
   border-top: 1px dotted #303030;
