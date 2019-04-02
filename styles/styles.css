@@ -318,8 +318,8 @@ footer {
       grid-template-areas: "div1 div2" "div3 div3"; } }
   @media (max-width: 500px) {
     footer {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
       grid-template-areas: "div1" "div2" "div3"; } }
 
 /*# sourceMappingURL=styles.css.map */
