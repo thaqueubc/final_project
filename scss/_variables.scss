@@ -17,6 +17,8 @@ $line-height: 1.2;
 $padding: 30px;
 $padding_footer: 10px;
 
+$link-hover-selector: '&:hover, &:focus, &:active';
+
 // Media Query Breakpoints
 $desktop: em(1250);
 $tablet: em(1024);

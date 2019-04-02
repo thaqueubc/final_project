@@ -70,12 +70,16 @@ header {
         header nav ul li a {
           text-decoration: none;
           outline: none; }
-      header nav ul a {
+      header nav ul li a {
         color: white;
         font-size: 1.2em;
         padding: 10px;
         margin: 0 10px;
         font-weight: bold; }
+    header nav a:hover, header nav a:focus, header nav a:active {
+      background-color: rgba(173, 216, 230, 0.3);
+      width: 100%;
+      border-radius: 10px; }
   @media (max-width: 750px) {
     header {
       flex-wrap: wrap; }
