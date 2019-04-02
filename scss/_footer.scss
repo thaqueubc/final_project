@@ -4,12 +4,12 @@ footer {
     background: $navbar-color;
     color: $text-color-light;
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 1;
+    grid-template-columns: repeat(3, 1fr);
+    //grid-template-rows: 1;
     grid-template-areas: "div1 div2 div3";
 
     .div{
-        padding:0px 20px;
+        padding:0 20px;
         @include display_ul;
         h2{
             font-size: 1.2em;
@@ -39,8 +39,8 @@ footer {
 
     @media (max-width:  750px) {
 
-        grid-template-columns: 2;
-        grid-template-rows: 2;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "div1 div2"
                              "div3 div3";
         
@@ -48,8 +48,8 @@ footer {
 
     @media (max-width:  500px) {
 
-        grid-template-columns: 1;
-        grid-template-rows: 3;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "div1"
                              "div2"
                              "div3";

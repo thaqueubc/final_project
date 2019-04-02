@@ -284,11 +284,10 @@ footer {
   background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
   color: white;
   display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 1;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "div1 div2 div3"; }
   footer .div {
-    padding: 0px 20px; }
+    padding: 0 20px; }
     footer .div li {
       list-style: none; }
       footer .div li a {
@@ -307,13 +306,13 @@ footer {
     grid-area: div3; }
   @media (max-width: 750px) {
     footer {
-      grid-template-columns: 2;
-      grid-template-rows: 2;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "div1 div2" "div3 div3"; } }
   @media (max-width: 500px) {
     footer {
-      grid-template-columns: 1;
-      grid-template-rows: 3;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "div1" "div2" "div3"; } }
 
 /*# sourceMappingURL=styles.css.map */
