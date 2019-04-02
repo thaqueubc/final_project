@@ -144,6 +144,8 @@ header {
                 text-align: center;
                 font-weight: normal; } }
   @media (max-width: 550px) {
+    header .menu-btn {
+      padding-top: 12px; }
     .show header nav {
       justify-content: center; }
       .show header nav ul {
@@ -217,71 +219,72 @@ main.outline {
         main.outline section div table {
           margin: 2px; } }
 
-div.form-heading {
-  width: 100%;
-  height: auto; }
-
-div.form {
-  display: flex;
-  justify-content: space-between; }
-  div.form section.form_container {
-    flex: 1 1 70%;
-    min-height: 50vh;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
-    background-size: 110px 200px;
-    background-repeat: repeat-x; }
-    div.form section.form_container h2 {
-      font-size: 2em;
-      text-shadow: 10px 10px 10px #363636;
-      margin-bottom: 60px; }
-    div.form section.form_container form div.info {
-      display: flex; }
-      div.form section.form_container form div.info p {
-        flex: 1 1 50%;
-        font-weight: bold;
-        float: left; }
-  div.form aside {
-    flex: 1 1 20%;
-    margin: 10px;
-    padding: 10px; }
-    div.form aside div {
-      padding: 10px;
-      margin: 15px 10px;
-      background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
-      color: white;
+main {
+  min-height: 80vh; }
+  main div.form-heading {
+    width: 100%;
+    height: auto; }
+  main div.form {
+    display: flex;
+    justify-content: space-between; }
+    main div.form section.form_container {
+      flex: 1 1 70%;
+      min-height: 50vh;
+      margin: 10px;
       border-radius: 10px;
-      box-shadow: 4px 4px 4px #2C2C2C;
-      flex: 1 1 50%; }
-      div.form aside div li {
-        list-style: none; }
-        div.form aside div li a {
-          text-decoration: none;
-          outline: none; }
-      div.form aside div p {
-        text-align: center; }
-    div.form aside div.box1 {
-      bottom: 10px; }
-  @media (max-width: 750px) {
-    div.form div.info {
-      flex-direction: column; }
-      div.form div.info p.info_left {
-        flex: 1; }
-      div.form div.info p.info_right {
-        flex: 1; } }
-  @media (max-width: 750px) {
-    div.form {
-      flex-direction: column-reverse; }
-      div.form section.form_container {
-        flex: 1;
-        margin: 10px 20px;
-        margin-bottom: 20px; }
-      div.form aside {
-        flex: 1;
-        margin: 0 10px;
-        padding: 0 10px; } }
+      padding: 10px;
+      background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
+      background-size: 110px 200px;
+      background-repeat: repeat-x; }
+      main div.form section.form_container h2 {
+        font-size: 2em;
+        text-shadow: 10px 10px 10px #363636;
+        margin-bottom: 60px; }
+      main div.form section.form_container form div.info {
+        display: flex; }
+        main div.form section.form_container form div.info p {
+          flex: 1 1 50%;
+          font-weight: bold;
+          float: left; }
+    main div.form aside {
+      flex: 1 1 20%;
+      margin: 10px;
+      padding: 10px; }
+      main div.form aside div {
+        padding: 10px;
+        margin: 15px 10px;
+        background: linear-gradient(to right, #4bc7ed 22%, #499bea 64%, #207ce5 89%);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px #2C2C2C;
+        flex: 1 1 50%; }
+        main div.form aside div li {
+          list-style: none; }
+          main div.form aside div li a {
+            text-decoration: none;
+            outline: none; }
+        main div.form aside div p {
+          text-align: center; }
+      main div.form aside div.box1 {
+        bottom: 10px; }
+    @media (max-width: 750px) {
+      main div.form div.info {
+        flex-direction: column; }
+        main div.form div.info p.info_left {
+          flex: 1; }
+        main div.form div.info p.info_right {
+          flex: 1; } }
+    @media (max-width: 750px) {
+      main div.form {
+        flex-direction: column-reverse; }
+        main div.form section.form_container {
+          flex: 1;
+          margin: 10px 20px;
+          margin-bottom: 20px; }
+        main div.form aside {
+          flex: 1;
+          margin: 0 10px;
+          padding: 0 10px; } }
 
 footer {
   border-top: 1px dotted #303030;
@@ -315,8 +318,8 @@ footer {
       grid-template-areas: "div1 div2" "div3 div3"; } }
   @media (max-width: 500px) {
     footer {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
       grid-template-areas: "div1" "div2" "div3"; } }
 
 /*# sourceMappingURL=styles.css.map */

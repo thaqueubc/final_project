@@ -156,6 +156,9 @@ header{
 }
 
 @media (max-width:  550px){
+   .menu-btn{
+       padding-top: 12px;
+   }
    nav{
         .show & {
             justify-content: center;

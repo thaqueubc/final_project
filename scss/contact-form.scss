@@ -1,103 +1,105 @@
-div.form-heading{
-    width: 100%;
-    height: auto;
-}
-
-div.form{
-    display: flex;
-    justify-content: space-between;
-    section.form_container{
-        flex: 1 1 70%;
-        min-height: 50vh;
-        margin:10px;
-        border-radius: 10px;
-        padding: 10px;
-
-        background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
-        radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
-        radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
-        background-size: 110px 200px;
-        background-repeat: repeat-x;
-    
-        h2{
-            @include subheading;
-            margin-bottom: 60px;
-        }
-        form{
-            div.info{
-               display: flex;
-                p{
-                    flex: 1 1 50%;
-                    font-weight: bold;
-                    float: left;
-                }
-
-            }
-        }
-        
+main{
+   min-height: 80vh;
+   div.form-heading{
+        width: 100%;
+        height: auto;
     }
 
-    aside{
-      flex: 1 1 20%;
-      margin:10px;
-      padding: 10px;
-
-      div{
-        padding: 10px;
-        margin: 15px 10px;
-        background:$navbar-color;
-        color: $text-color-light;
-        border-radius: 10px;
-        box-shadow: 4px 4px 4px #2C2C2C;
-        flex: 1 1 50%;
-        @include display_ul;
-
-        p{
-            text-align: center;
-        }
-    }
-
-    div.box1{
-        bottom: 10px;
-    }
-
-   
-    }
-
-
-    @media (max-width:  750px){
-
-        div.info{
-            flex-direction: column;
-            p.info_left{
-                flex: 1;
-            }
-
-            p.info_right{
-                flex: 1;
-            }
-
-
-        }
-    }
-
-    @media (max-width:  750px){
-        flex-direction: column-reverse;
+    div.form{
+        display: flex;
+        justify-content: space-between;
         section.form_container{
-            flex: 1;
-            margin:10px 20px;
-            margin-bottom: 20px;
+            flex: 1 1 70%;
+            min-height: 50vh;
+            margin:10px;
+            border-radius: 10px;
+            padding: 10px;
+
+            background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+            radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+            radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+            background-size: 110px 200px;
+            background-repeat: repeat-x;
+        
+            h2{
+                @include subheading;
+                margin-bottom: 60px;
+            }
+            form{
+                div.info{
+                display: flex;
+                    p{
+                        flex: 1 1 50%;
+                        font-weight: bold;
+                        float: left;
+                    }
+
+                }
+            }
+            
         }
 
         aside{
-            flex: 1;
-            margin: 0 10px;
-            padding:0 10px; 
+        flex: 1 1 20%;
+        margin:10px;
+        padding: 10px;
+
+        div{
+            padding: 10px;
+            margin: 15px 10px;
+            background:$navbar-color;
+            color: $text-color-light;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px #2C2C2C;
+            flex: 1 1 50%;
+            @include display_ul;
+
+            p{
+                text-align: center;
+            }
         }
-        
+
+        div.box1{
+            bottom: 10px;
+        }
+
+    
+        }
+
+
+        @media (max-width:  750px){
+
+            div.info{
+                flex-direction: column;
+                p.info_left{
+                    flex: 1;
+                }
+
+                p.info_right{
+                    flex: 1;
+                }
+
+
+            }
+        }
+
+        @media (max-width:  750px){
+            flex-direction: column-reverse;
+            section.form_container{
+                flex: 1;
+                margin:10px 20px;
+                margin-bottom: 20px;
+            }
+
+            aside{
+                flex: 1;
+                margin: 0 10px;
+                padding:0 10px; 
+            }
+            
+        }
+
     }
 
 }
-
-
 
