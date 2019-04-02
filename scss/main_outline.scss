@@ -32,9 +32,9 @@ main.outline{
         padding: $padding;
        
         div{
-            h1{
-                font-size: 2em; 
-                text-shadow: 10px 10px 10px #363636;
+            .heading{
+                margin-top: 0;
+                @include subheading;
             }
 
             h2{
