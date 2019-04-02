@@ -9,7 +9,7 @@ footer {
     grid-template-areas: "div1 div2 div3";
 
     .div{
-        padding:0 20px;
+        padding:0px 20px;
         @include display_ul;
         h2{
             font-size: 1.2em;
