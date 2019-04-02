@@ -175,7 +175,8 @@ main.outline {
   main.outline section {
     flex: 1 1 78%;
     padding: 30px; }
-    main.outline section div h1 {
+    main.outline section div .heading {
+      margin-top: 0;
       font-size: 2em;
       text-shadow: 10px 10px 10px #363636; }
     main.outline section div h2 {
@@ -228,7 +229,9 @@ div.form {
     background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
     background-size: 110px 200px;
     background-repeat: repeat-x; }
-    div.form section.form_container h1 {
+    div.form section.form_container h2 {
+      font-size: 2em;
+      text-shadow: 10px 10px 10px #363636;
       margin-bottom: 60px; }
     div.form section.form_container form div.info {
       display: flex; }

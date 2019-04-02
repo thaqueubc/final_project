@@ -51,3 +51,9 @@
     position: absolute;
 }
 
+//this mixin use h2 tag with shadow to show sub heading
+@mixin  subheading {
+    font-size: 2em; 
+    text-shadow: 10px 10px 10px #363636;
+}
+
