@@ -5,7 +5,7 @@ main.outline{
     aside{
         flex:1 1 18%;
         @include display_ul;
-        
+        padding-left:20px; 
         ul{
             display: flex;
             flex-direction: column;
@@ -30,8 +30,10 @@ main.outline{
     section{
         flex:1 1 78%;
         padding: $padding;
-       
+        margin: 10px;
+        margin-right: 25px;
         div{
+            padding: 10px;
             .heading{
                 margin-top: 0;
                 @include subheading;
@@ -78,6 +80,19 @@ main.outline{
                     margin: 2px;
                 }
             }
+        }
+
+        @media (max-width:  400px){
+          aside{
+           ul{
+               li{
+                   a{
+                       font-size: 0.8em;
+                   }
+               }
+           }
+          }
+
         }
     }
         

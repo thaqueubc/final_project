@@ -9,7 +9,7 @@ Error: Undefined mixin 'display_ul'.
 5:     aside{
 6:         flex:1 1 18%;
 7:         @include display_ul;
-8:         
+8:         padding-left:20px; 
 9:         ul{
 10:             display: flex;
 11:             flex-direction: column;
@@ -84,4 +84,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'display_ul'.\A         on line 7 of scss/main_outline.scss, in `display_ul'\A         from line 7 of scss/main_outline.scss\A \A 2:     min-height: 80vh;\A 3:     display: flex;\A 4:     box-shadow: inset -5px -5px 10px 10px whitesmoke;\A 5:     aside{\A 6:         flex:1 1 18%;\A 7:         @include display_ul;\A 8:         \A 9:         ul{\A 10:             display: flex;\A 11:             flex-direction: column;\A 12:             padding: 5px;"; }
+  content: "Error: Undefined mixin 'display_ul'.\A         on line 7 of scss/main_outline.scss, in `display_ul'\A         from line 7 of scss/main_outline.scss\A \A 2:     min-height: 80vh;\A 3:     display: flex;\A 4:     box-shadow: inset -5px -5px 10px 10px whitesmoke;\A 5:     aside{\A 6:         flex:1 1 18%;\A 7:         @include display_ul;\A 8:         padding-left:20px; \A 9:         ul{\A 10:             display: flex;\A 11:             flex-direction: column;\A 12:             padding: 5px;"; }
